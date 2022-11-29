@@ -1,0 +1,449 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #f5f3f3;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #222;
+}
+h1, h2, h4 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+h1 {
+    text-align: center;
+    font-size: 4.0rem; 
+    line-height: 1.2;  
+    letter-spacing: -.1rem;
+    font-weight: 300; 
+}
+h2 {
+    font-size: 3rem;
+    line-height: 1.25; 
+    letter-spacing: -.1rem; 
+    font-weight: 300; 
+}
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.35; 
+    letter-spacing: -.08rem; 
+    min-height: 6rem;
+}
+p {
+    margin-top: 0; 
+}
+
+/* HEADER */
+header {
+    padding: 20px 0 0 0;
+    background: white;
+    text-align: center;
+}
+
+/* CONTAINER */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; 
+}
+
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box; 
+}
+
+/* DELETE */
+.delete-course {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.delete-course:active {
+    font-size: 9px;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0; 
+}
+li {
+    margin-bottom: 1rem; 
+}
+
+/* SHOPPING CART */
+.submenu {
+    position: relative;
+}
+.submenu #cart{
+    display: none;
+}
+.submenu:hover #cart{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+/* HERO */
+#hero {
+    background-image:url(../img/hero.jpg);
+    height: 330px;
+    background-size: cover;
+}
+#header2 {
+    margin: 30px 0;
+}
+.hero-content {
+    margin-top: 40px;
+    color: white;
+}
+.hero-content form {
+    position: relative;
+    margin-bottom: 0;
+}
+.hero-content form #search-bar {
+    height: 50px;
+    margin-bottom: 0;
+}
+.hero-content form #search-bar:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+.hero-content form .submit-search-bar {
+    position: absolute;
+    right:0;
+    top:0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(../img/magniglass.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border:none;
+}
+
+/* BAR */
+.bar {
+    padding: 20px 0;
+    background: linear-gradient(to right, #741d51 0%,#e44e52 100%);
+}
+.bar p {
+    margin:0;
+    color: white;
+}
+
+/* ICONS */
+.icon {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 60px;
+    background-size: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.icon1 {
+    background-image: url(../img/icon1.png);
+}
+.icon2 {
+    background-image: url(../img/icon2.png);
+}
+.icon3 {
+    background-image: url(../img/icon3.png);
+}
+
+/* COURSES */
+#course-list .row {
+    margin-bottom:20px;
+}
+
+/* ADD TO CART */
+.add-cart {
+    margin:10px 0;
+}
+.successAlert {
+    color: green;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* CARD */
+.card {
+    position: relative;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+    min-height: 46rem;
+    border-radius: 4px;
+}
+.card img {
+    border-radius: 4px;
+}
+.info-card  {
+    padding: 10px 20px;
+}
+.info-card p, 
+.card h4 {
+    margin-bottom: 5px;
+}
+.info-card .price {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.info-card .price span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 40px;
+    border-top:1px solid #aaa;;
+    padding-top: 40px;   
+}
+.footer .menu a{
+display: block;
+margin-bottom: 10px;
+text-decoration: none;
+}
+.footer .menu a:hover {
+    text-decoration: underline;
+}
+
+/* UTILITIES */
+.u-full-width {
+    width: 100%;
+    box-sizing: border-box;
+}
+.u-pull-right {
+    float: right;
+}
+
+/* Links */
+a {
+    color: #1EAEDB;
+}
+a:hover {
+    color: #0FA0CE; 
+}
+
+/* Tables */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; 
+}
+th:first-child,
+td:first-child {
+  padding-left: 0; 
+}
+th:last-child,
+td:last-child {
+  padding-right: 0; 
+}
+
+/* Self Clearing Goodness */
+.container:after,
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; 
+  position: absolute;
+  bottom: 0rem;
+  left: 0rem;
+}
+.button:active {
+    font-size: 9px;
+}
+
+/*MAGNIFYING GLASS*/
+input[type="text"] {
+    color: rgb(20, 20, 20);
+}
+input[type="submit"] {
+    float: right;
+    background-color: transparent;
+}
+.button:hover,
+input[type="submit"]:hover {
+  color: #333;
+  border-color: #888;
+  outline: 0; 
+}
+.button.button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; 
+}
+.button.button-primary:hover {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; 
+}
+
+/* Spacing */
+.button {
+  margin-bottom: 0rem; 
+}
+input {
+  margin-bottom: 1.5rem; 
+}
+table,
+p,
+ul,
+form {
+  margin-bottom: 2.5rem; 
+}
+
+/* MEDIA QUERIES */
+/* For devices larger than 1000px */
+@media (min-width: 1000px) {
+    header {
+        text-align: left;
+    }
+    h1 { 
+        font-size: 5.0rem; 
+    }
+    h2 { 
+        font-size: 4.2rem; 
+    }
+    h4 {
+        font-size: 3rem;
+        min-height: 16rem;
+    }
+    .card {
+        min-height: 52rem;
+        text-align: left;
+    }
+    .icon {
+        margin-bottom:0;
+    }
+    .one.columns {
+        width: 48%;            
+    }
+}
+/* For devices larger than 750px */
+@media (min-width: 750px) and (max-width: 1000px) {
+    header {
+        text-align: left;
+    }
+    h1 { 
+        font-size: 5.0rem; 
+    }
+    h2 { 
+        font-size: 4.2rem; 
+    }
+    h4 {
+        font-size: 3rem;
+        min-height: 20.5rem;
+    }
+    .card {
+        min-height: 53rem;
+        text-align: left;
+    }
+    .icon {
+        margin-bottom:0;
+    }
+    .one.columns {
+        width: 70%;            
+    }
+}
+/* For devices larger than 550px and smaller than 750px */
+@media (min-width: 550px) and (max-width: 750px) {
+    h1 { 
+        font-size: 5.0rem; 
+    }
+    h2 { 
+        font-size: 4.2rem; 
+    }
+    h4 { 
+        font-size: 2.4rem; 
+        min-height: 17rem;
+    }
+    .card {
+        min-height: 46rem;
+        text-align: left;
+    }
+    .one.columns {
+        width: 70%;            
+    }
+}
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+    .container {
+      width: 80%; 
+    }
+    .columns {
+      margin-left: 4%; 
+    }
+    .columns:first-child {
+      margin-left: 0; 
+    }
+    .two.columns {
+      width: 13.3%; 
+    }
+    .three.columns {
+      width: 30.6%; 
+    }
+}
+/* For devices larger than 400px and smaller than 550px */
+@media (min-width: 400px) and (max-width: 550px) {
+    .container {
+      width: 85%;
+      padding: 0; 
+    }
+    .card {
+        min-height: 52.5rem;
+    }
+}
+/* For devices smaller than 500px */
+@media (max-width: 500px) {
+    table {
+        font-size: 10px;
+    }
+    table img {
+        width: 50px;
+    }
+}
